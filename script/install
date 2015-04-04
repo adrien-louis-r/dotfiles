@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+# Run all dotfiles installers.
+
+set -x
+
+cd "$(dirname $0)"/..
+[ -n "$DOTFILES" ] && DOTFILES="`pwd`"
+
+# find the installers and run them iteratively
+find . -maxdepth 2 -name install.sh | while read installer ; do bash -c "${installer} < /dev/tty"; done

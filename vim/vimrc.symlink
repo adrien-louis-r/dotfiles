@@ -1,0 +1,22 @@
+" execute pathogen#infect()
+syntax on
+filetype plugin indent on
+set number
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+nmap <space> i_<esc>r
+nmap K i<cr><esc>k$
+nmap s :w <enter>
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap tt  :tabedit<Space>
+nnoremap tn  :tabnext<CR>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+map <C-n> :NERDTreeToggle<CR>
+
+" Wrap gitcommit file types at the appropriate length
+filetype indent plugin on

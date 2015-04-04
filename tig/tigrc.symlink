@@ -1,0 +1,8 @@
+set show-id = true
+set show-refs = true
+
+bind main P !git push origin
+bind main p !git pull --rebase
+bind main f !git fetch --all
+
+bind status A !git commit --amend
