@@ -1,18 +1,8 @@
 {
 	"always_show_minimap_viewport": true,
-	"caret_style": "phase",
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
-	"folder_exclude_patterns":
-	[
-		".sass-cache"
-	],
 	"font_face": "Source Sans Pro",
 	"font_size": 11,
 	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"rulers":

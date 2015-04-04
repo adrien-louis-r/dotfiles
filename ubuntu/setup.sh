@@ -25,13 +25,14 @@ TO_INSTALL=(
 	'tig'
 	'git-gui'
 	'bash-completion'
-  	'xscreensaver'
-  	'nginx'
-  	'mysql-server'
-  	'mysql-client'
-  	'php5-fpm'
-  	'phpmyadmin'
-  	'dnsmasq'
+	'xscreensaver'
+	'nginx'
+	'mysql-server'
+	'mysql-client'
+	'php5-fpm'
+	'phpmyadmin'
+	'dnsmasq'
+	'lxappearance'
 )
 
 INSTALL_COMMAND=$(printf " %s" "${TO_INSTALL[@]}")
