@@ -1,11 +1,9 @@
-if test ! $(which awesome)
+if test ! $(which xmonad)
 then
 	echo "  Installing xmonad for you"
-	sudo apt-get -y install xmonad libghc-xmonad-dev libghc-xmonad-contrib-dev xmobar stalonetray
+	sudo apt-add-repository ppa:synapse-core/testing
+	sudo apt-get update
+
+	sudo apt-get -y install xmonad libghc-xmonad-dev libghc-xmonad-contrib-dev xmobar synapse stalonetray
 fi
 
-if [ ! -h $HOME/.xmonad ]
-then
-	echo "  Configuring xmonad for you"
-	ln -s $DOTFILES/xmonad/config $HOME/.xmonad
-fi

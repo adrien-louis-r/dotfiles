@@ -99,7 +99,6 @@ install_dotfiles () {
   done
 }
 
-setup_gitconfig
 install_dotfiles
 
 # If we're on a Linux, let's install and setup dependencies.
