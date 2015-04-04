@@ -1,0 +1,36 @@
+# Sample gitconfig
+#
+
+[hub]
+        protocol = https
+[user]
+        name = Adrien Louis-Rossignol
+        email = adrien.louis.r@gmail.com
+[credential]
+        helper = cache
+[alias]
+        co = checkout
+        wtf     = !$DOTFILES/bin/git-wtf
+        count   = !git shortlog -sn
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+[core]
+	excludesfile = /home/adrien/.gitignore_global
+        editor = vim
+        filemode = false
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[help]
+        autocorrect = 1
+[push]
+        # See `git help config` (search for push.default)
+        # for more information on different options of the below setting.
+        #
+        # Setting to git 2.0 default to surpress warning message
+        default = current
