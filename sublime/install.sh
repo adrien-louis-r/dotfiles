@@ -5,6 +5,17 @@
 #
 DOTFILE_SUBLIME_CONFIG_PATH=$HOME"/.config/sublime-text-3/Packages/User"
 
+if test ! $(which subl)
+then
+	echo "  Installing sublime for you"
+	 sudo add-apt-repository ppa:webupd8team/sublime-text-3
+	sudo apt-get update
+
+	sudo apt-get -y install sublime-text-installer
+fi
+
+
+
 if [ ! -h "$DOTFILE_SUBLIME_CONFIG_PATH" ] && [ -f $DOTFILE_SUBLIME_CONFIG_PATH"/Package Control.last-run" ]
 then
 	echo "  Configuring sublime for you"
