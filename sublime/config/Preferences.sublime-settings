@@ -1,14 +1,14 @@
 {
-	"always_show_minimap_viewport": true,
-	"font_face": "Source Sans Pro",
-	"font_size": 11,
+	"color_scheme": "Packages/Oceanic Color Scheme/Themes/Oceanic - Eighties.tmTheme",
+	"font_face": "Ubuntu Mono",
+	"font_size": 13,
 	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"rulers":
-	[
-		60
-	],
-	"tab_size": 2,
+	"tab_size": 4,
 	"trim_trailing_white_space_on_save": true
 }
