@@ -51,6 +51,6 @@ SAVEHIST=10000
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="af-magic"
 
-plugins=(git git-flow npm ssh-agent colorize colored-man composer extract)
+plugins=(git git-flow npm ssh-agent colorize colored-man composer extract zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
