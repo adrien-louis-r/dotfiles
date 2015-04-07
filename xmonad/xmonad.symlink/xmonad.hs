@@ -9,10 +9,10 @@ import XMonad.Layout.NoBorders
 import XMonad.Hooks.ManageHelpers
 
 main = do
-    xmproc <- spawnPipe "trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint black --height 24&"
+    xmproc <- spawnPipe"trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --transparent true --tint black --height 24&"
     xmproc <- spawnPipe"nm-applet&"
     xmproc <- spawnPipe"xscreensaver -nosplash&"
-    xmproc <- spawnPipe"xmobar ~/.xmonad/xmobarrc"
+    xmproc <- spawnPipe"~/.cabal/bin/xmobar ~/.xmonad/xmobarrc"
     xmonad $ defaultConfig
         { manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
         , layoutHook = avoidStruts $ layoutHook defaultConfig

@@ -33,6 +33,7 @@ TO_INSTALL=(
 	'phpmyadmin'
 	'dnsmasq'
 	'lxappearance'
+	'htop'
 )
 
 INSTALL_COMMAND=$(printf " %s" "${TO_INSTALL[@]}")

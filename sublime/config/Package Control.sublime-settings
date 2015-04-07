@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Babel",
+		"Markdown Preview",
 		"Oceanic Color Scheme",
 		"Package Control",
 		"SideBarEnhancements"
